@@ -1,0 +1,15 @@
+﻿@using CookiesSessiones.Utilidades
+@model HandleErrorInfo
+@{
+    ViewBag.Title = "Error";
+}
+
+<h2>Error</h2>
+@if (Model.Exception is MiExcepcion)
+{
+    <h1>@Model.Exception.Message</h1>
+}
+else
+{
+    <h1>Esto se ha ROTO!!!!!!!!!</h1>
+}

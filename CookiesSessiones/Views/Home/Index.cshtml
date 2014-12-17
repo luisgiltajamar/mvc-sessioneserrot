@@ -1,0 +1,21 @@
+﻿@model String
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+@using (Html.BeginForm())
+{
+    <h4>Que color te gusta</h4>
+    <select name="color">
+        <option value="red">Rojo</option>
+        <option value="blue">Azul</option>
+        <option value="green">Verde</option>
+        <option value="yellow">Amarillo</option>
+
+    </select>
+    <br/>
+    <input type="submit" value="Enviar"/>
+    
+}
